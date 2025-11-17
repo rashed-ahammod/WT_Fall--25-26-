@@ -81,7 +81,14 @@
             }
             if(isNan(phone)){
                 errorDiv.innerHML="Number Invalid";
+                 return false;
             }
+            if(password !==confirm){
+                errorDiv.innerHML="Password Not Match";
+                 return false;
+            }
+
+            
 
             
 
