@@ -40,7 +40,7 @@
         </style>
     </head>
     <body>
-        <form>
+        <form onesubmit="return handleSubmit()">
             <center><h2>Participant Registration<h2></center>
             Full Name:<br>
             <input type="text" id="name"><br>
@@ -60,6 +60,7 @@
 
         </form>
         <script>
+            function handleSubmit(){
 
             var name=document.getElementById("name").value.trim();
              var email=document.getElementById("email").value.trim();
@@ -87,8 +88,16 @@
                 errorDiv.innerHML="Password Not Match";
                  return false;
             }
+            outputDiv.innerHML=`
+            <strong>Registration Successfull</strong><br><br>
+            Name:${name}<br>
+            Email:${email}<br>
+            Phone:${number}
+            `
+            return false;
+        }
 
-            
+
 
             
 
