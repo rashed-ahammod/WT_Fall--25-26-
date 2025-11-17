@@ -21,4 +21,9 @@
 
         </style>
     </head>
+    <body>
+        <form>
+            <center><h2>Participant Registration<h2></center>
+        </form>
+    </body>
 </html>
