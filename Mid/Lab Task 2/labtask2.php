@@ -68,6 +68,20 @@
                 var confirm=document.getElementById("confirm").value.trim();
             var errorDiv=document.getElementById("error");
             var outputDiv=document.getElementById("output");
+            errorDiv.innerHML="";
+            outputDiv.innerHML="";
+
+            if(name==""||email===""||number===""||password===""||confirm===""){
+                errorDiv.HTML="Please fill in all";
+                return false;
+            }
+            if(!email.includes("@")){
+                errorDiv.innerHML="Provide valid Email";
+                return false;
+            }
+            if(isNan(phone)){
+                errorDiv.innerHML="Number Invalid";
+            }
 
             
 
