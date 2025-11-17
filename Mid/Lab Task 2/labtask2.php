@@ -43,15 +43,15 @@
         <form>
             <center><h2>Participant Registration<h2></center>
             Full Name:<br>
-            <input type="text"><br>
+            <input type="text" id="name"><br>
             Email:<br>
-            <input type="text"><br>
+            <input type="text" id="email"><br>
             Phone Number:<br>
-            <input type="text"><br>
+            <input type="text" id="number"><br>
             Password:<br>
-            <input type="text"><br>
+            <input type="text" id="password"><br>
             Confirm Password:<br>
-            <input type="text"><br><br>
+            <input type="text" id="confirm"><br><br>
             <button style="color:#142899">Register<button>
                 <br><br>
             <div id ="output"><div>
@@ -59,6 +59,11 @@
             <div id="error">
 
         </form>
+        <script>
+
+            var
+
+        </script>
 
     </body>
 </html>
