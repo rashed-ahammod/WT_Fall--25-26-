@@ -21,14 +21,14 @@
                 width:100%;
             }
             #output{
-                background-color:#a0decb;
-                
-                width:100%;
+                color:#a0decb;
+                font size:16px;
+                margin-top:20px;
                 text-align:center;
             }
             error{
-                background-color:#a0decb;
-                width:100%;
+                
+                margin-top:20px;
                 text-align:center;
                 color:red;
 
@@ -99,7 +99,7 @@
 
 
 
-            
+     
 
         </script>
 
