@@ -20,6 +20,21 @@
             input{
                 width:100%;
             }
+            #output{
+                background-color:#a0decb;
+                
+                width:100%;
+                text-align:center;
+            }
+            error{
+                background-color:#a0decb;
+                width:100%;
+                text-align:center;
+                color:red;
+
+            }
+            
+
             
 
         </style>
@@ -38,6 +53,12 @@
             Confirm Password:<br>
             <input type="text"><br><br>
             <button style="color:#142899">Register<button>
+                <br><br>
+            <div id ="output"><div>
+                
+            <div id="error">
+
         </form>
+
     </body>
 </html>
