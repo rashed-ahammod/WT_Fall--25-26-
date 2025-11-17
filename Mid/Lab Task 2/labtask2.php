@@ -52,13 +52,14 @@
             <input type="text" id="password"><br>
             Confirm Password:<br>
             <input type="text" id="confirm"><br><br>
-            <button style="color:#142899">Register<button>
+            <button type="submit">Register</button>
                 <br><br>
+                </form>
             <div id ="output"><div>
                 
             <div id="error">
 
-        </form>
+        
         <script>
             function handleSubmit(){
 
