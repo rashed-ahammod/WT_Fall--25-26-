@@ -61,7 +61,15 @@
         </form>
         <script>
 
-            var
+            var name=document.getElementById("name").value.trim();
+             var email=document.getElementById("email").value.trim();
+              var number=document.getElementById("number").value.trim();
+               var password=document.getElementById("password").value.trim();
+                var confirm=document.getElementById("confirm").value.trim();
+            var errorDiv=document.getElementById("error");
+            var outputDiv=document.getElementById("output");
+
+            
 
         </script>
 
