@@ -11,7 +11,7 @@
             }
             form{
                 background-color: #ffffff;
-                padding: 40px;
+                padding: 20px;
                 border-radius: 10px;
                 width: 300px;
                 margin: 0 auto;
@@ -20,15 +20,18 @@
             input{
                 width:100%;
             }
+            button{
+                cursor:pointer;
+            }
             #output{
-                color:#a0decb;
+                color:#0b032e;
                 font size:16px;
                 margin-top:20px;
                 text-align:center;
             }
-            error{
+            #error{
                 
-                margin-top:20px;
+                margin-top:10px;
                 text-align:center;
                 color:red;
 
@@ -40,7 +43,7 @@
         </style>
     </head>
     <body>
-        <form onesubmit="return handleSubmit()">
+        <form onsubmit="return handleSubmit()">
             <center><h2>Participant Registration<h2></center>
             Full Name:<br>
             <input type="text" id="name"><br>
@@ -55,9 +58,9 @@
             <button type="submit">Register</button>
                 <br><br>
                 </form>
-            <div id ="output"><div>
+            <div id ="output"></div>
                 
-            <div id="error">
+            <div id="error"></div>
 
         
         <script>
@@ -70,31 +73,31 @@
                 var confirm=document.getElementById("confirm").value.trim();
             var errorDiv=document.getElementById("error");
             var outputDiv=document.getElementById("output");
-            errorDiv.innerHML="";
-            outputDiv.innerHML="";
+            errorDiv.innerHTML="";
+            outputDiv.innerHTML="";
 
             if(name==""||email===""||number===""||password===""||confirm===""){
-                errorDiv.HTML="Please fill in all";
+                errorDiv.innerHTML="Please fill in all";
                 return false;
             }
             if(!email.includes("@")){
-                errorDiv.innerHML="Provide valid Email";
+                errorDiv.innerHTML="Provide valid Email";
                 return false;
             }
-            if(isNan(phone)){
-                errorDiv.innerHML="Number Invalid";
+            if(isNaN(number)){
+                errorDiv.innerHTML="Number Invalid";
                  return false;
             }
             if(password !==confirm){
-                errorDiv.innerHML="Password Not Match";
+                errorDiv.innerHTML="Password Not Match";
                  return false;
             }
-            outputDiv.innerHML=`
+            outputDiv.innerHTML=`
             <strong>Registration Successfull</strong><br><br>
             Name:${name}<br>
             Email:${email}<br>
             Phone:${number}
-            `
+            `;
             return false;
         }
 
