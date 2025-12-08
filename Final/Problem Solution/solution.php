@@ -9,3 +9,5 @@ for($month=1;$month<=12;$month++){
     echo "Month $month=Balance=$balance <br>";
 
 }
+echo "<br>Final Balance after 12 months = $balance";
+?>
