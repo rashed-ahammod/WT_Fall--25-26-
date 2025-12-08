@@ -6,5 +6,6 @@ for($month=1;$month<=12;$month++){
     if($month%11==0){
         $balance-=50;
     }
+    echo "Month $month=Balance=$balance <br>";
 
 }
