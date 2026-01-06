@@ -1,27 +1,16 @@
 
-
-<!DOCTYPE html>
+<!DOCTYPE HYML>
 <html>
-<head>
-    <title>Session Login</title>
-</head>
-<body>
+    <body>
+       <form method="post" action="loginController.php">
+ 
+Name: <input type="text" name="name">
 
-<h2>Login Form</h2>
-
-<form method="post" action="loginController.php">
-    Username:
-    <input type="text" name="name">
-    <br><br>
-
-    Password:
-    <input type="password" name="password">
-    <br><br>
-
-    <input type="submit" value="Login">
+ 
+Password : <input type="text" name="password">
+ 
+ 
+<button type="submit">Login<button>
 </form>
-
-
-
-</body>
+    </body>
 </html>
